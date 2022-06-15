@@ -24,5 +24,5 @@ export const action: ActionFunction = async ({
 
   /* process the webhook (e.g. enqueue a background job) */
 
-  return json({ success: true }, 200);
+  return (json({ success: true }, 200), console.log('Listened successfully'));
 };
